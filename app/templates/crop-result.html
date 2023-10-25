@@ -1,0 +1,28 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+  .mt-0 {
+  margin-top: 50 !important;
+  color: lightblue;
+}
+
+
+</style>
+
+
+  <div class="container py-2 mx-auto my-50 h-10 " style="margin: 12rem;">
+  <div class="row">
+      <div class="col-sm py-2 py-md-3">
+        <h1 class="text-center"><b>Temperature: <i>{{ temp }} </i></b></h1>
+        <h1 class="text-center"><b>Humidity: <i>{{ humd }} </i></b></h1>
+
+
+          
+               <h1 class="text-center"><b>We Recommend you to grow <i>{{ prediction }} </i>in your farm</b></h1>
+          
+      </div>
+  </div>
+   </div>
+
+
+{% endblock %}
